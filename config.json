@@ -1,0 +1,319 @@
+{
+  "year": "2024",
+  "ADM1": "RIMPUFF",
+  "ADM2": "DIPCOT",
+  "ADM3": "LASAT",
+  "site_name": "Borssele",
+  "site_coord": "3.7187, 51.4311",
+  "epsg": 32631,
+  "root_1": "C:\\Users\\USER\\Nextcloud\\ADMs Paper\\JRODOS Projects\\Simulations\\Review\\SITE\\ADM\\2024_1",
+  "root_2": "C:\\Users\\USER\\Nextcloud\\ADMs Paper\\JRODOS Projects\\Simulations\\Review\\SITE\\ADM\\2024_1",
+  "root_3": "C:\\Users\\USER\\Nextcloud\\ADMs Paper\\JRODOS Projects\\Simulations\\Review\\SITE\\ADM\\2024_1",
+  "relative_adms": "C:\\Users\\USER\\Nextcloud\\ADMs Paper\\JRODOS Projects\\Simulations\\Review\\SITE\\Relative_Frequency\\ADM1_ADM2",
+  "overlay_adms": "C:\\Users\\USER\\Nextcloud\\ADMs Paper\\JRODOS Projects\\Simulations\\Review\\SITE\\Overlay_ADMS\\ADM1_ADM2_ADM3",
+  "log_path": "C:\\Users\\USER\\Nextcloud\\ADMs Paper\\JRODOS Projects\\Simulations\\Review\\SITE",
+  "write_debug_logs": false,
+  "grid_path": "C:\\Users\\USER\\Nextcloud\\ADMs Paper\\JRODOS Projects\\JRodos_Computational_Grid\\SITE",
+  "exceed_level": 1,
+  "exceed_unit": "",
+  "threshold": 0,
+  "basemap_path" : "basemaps/europe.shp",
+  "with_local_basemap_overlay": true,
+
+  "plot_settings": {
+    "figure_size": [12, 10],
+    "dpi": 600,
+
+    "font_size_title": 16,
+    "font_size_axis_label": 13,
+    "font_size_tick_label": 12,
+    "font_size_ring_label": 11,
+    "font_size_bearing_label": 11,
+    "font_size_legend": 11,
+    "font_size_legend_title": 12,
+
+    "show_legend": false,
+    "export_legend": false,
+    "legend_frame": true,
+
+    "basemap_provider": "terrain"
+  },
+
+  "visual_parameters": {
+    "evacuation": {
+      "major_step_km": 50,
+      "minor_step_km": 25,
+      "ring_step_km" : 25,
+      "max_radius_km": 400,
+      "show_bearings": true,
+      "bearing_step_deg": 45,
+      "padding_km": 10,
+
+      "extent_mode": "auto",
+      "extent_km": [-100, 100, -125, 100],
+      "extent_lonlat": [2.2, 50.3, 5.12, 52.4]
+    },
+    "sheltering": {
+      "major_step_km": 100,
+      "minor_step_km": 50,
+      "ring_step_km" : 50,
+      "max_radius_km": 400,
+      "show_bearings": true,
+      "bearing_step_deg": 45,
+      "padding_km" : 15,
+
+      "extent_mode": "auto",
+      "extent_km": [-200, 200, -200, 200],
+      "extent_lonlat": [3.0, 50.0, 9.0, 55.0]
+    }
+  },
+  "DIPCOT-LASAT": {
+   "difference_plots_params" : {
+        "Borssele": {
+            "box_anchors" : {
+                "evacuation": [0.85, 0.4],
+                "sheltering": [0.83, 0.42]
+            }
+        },
+        "Leibstadt": {
+            "box_anchors" : {
+                "evacuation": [0.8, 0.4],
+                "sheltering": [0.82, 0.4]
+            }
+        },
+        "Cattenom" : {
+            "box_anchors" : {
+                "evacuation": [0.84, 1.0],
+                "sheltering": [0.83, 0.39]
+              }
+        }
+   }
+  },
+  "RIMPUFF-LASAT": {
+   "difference_plots_params" : {
+        "Borssele": {
+            "box_anchors" : {
+                "evacuation": [0.85, 0.45],
+                "sheltering": [0.83, 0.42]
+            }
+        },
+        "Leibstadt": {
+            "box_anchors" : {
+                "evacuation": [0.8, 0.4],
+                "sheltering": [0.83, 0.4]
+            }
+        },
+        "Cattenom" : {
+            "box_anchors" : {
+                "evacuation": [0.84, 0.5],
+                "sheltering": [0.82, 0.39]
+              }
+        }
+    }
+  },
+  "RIMPUFF-DIPCOT": {
+   "difference_plots_params" : {
+       "Borssele": {
+            "box_anchors" : {
+                "evacuation": [0.1, 0.4],
+                "sheltering": [0.82, 0.95]
+            }
+        },
+       "Leibstadt": {
+            "box_anchors" : {
+                "evacuation": [0.05, 0.85],
+                "sheltering": [0.82, 0.45]
+            }
+        },
+       "Cattenom" : {
+            "box_anchors" : {
+                "evacuation": [0.83, 0.95],
+                "sheltering": [0.05, 0.45]
+              }
+       }
+   }
+  },
+  "RIMPUFF": {
+    "probabilistic_plots_params": {
+       "Borssele": {
+            "box_anchors" : {
+                "evacuation": [0.03, 0.95],
+                "sheltering": [0.8, 0.99]
+            }
+        },
+       "Leibstadt": {
+            "box_anchors" : {
+                "evacuation": [0.05, 0.85],
+                "sheltering": [0.05, 0.96]
+            }
+        },
+       "Cattenom" : {
+            "box_anchors" : {
+                "evacuation": [0.83, 0.95],
+                "sheltering": [0.05, 0.38]
+              }
+        }
+    }
+  },
+  "DIPCOT": {
+   "probabilistic_plots_params": {
+       "Borssele": {
+            "box_anchors" : {
+                "evacuation": [0.05, 0.87],
+                "sheltering": [0.05, 0.95]
+            }
+        },
+       "Leibstadt": {
+            "box_anchors" : {
+                "evacuation": [0.85, 0.97],
+                "sheltering": [0.82, 0.44]
+            }
+        },
+       "Cattenom" : {
+            "box_anchors" : {
+                "evacuation": [0.03, 0.98],
+                "sheltering": [0.82, 0.33]
+              }
+        }
+   }
+
+  },
+  "LASAT": {
+    "probabilistic_plots_params" : {
+       "Borssele": {
+            "box_anchors" : {
+                "evacuation": [0.1, 0.95],
+                "sheltering": [0.84, 0.35]
+            }
+        },
+       "Leibstadt": {
+            "box_anchors" : {
+                "evacuation": [0.75, 0.95],
+                "sheltering": [0.02, 0.95]
+            }
+        },
+       "Cattenom" : {
+            "box_anchors" : {
+                "evacuation": [0.85, 0.95],
+                "sheltering": [0.85, 0.32]
+              }
+       }
+    }
+  },
+  "RIMPUFF-DIPCOT-LASAT": {
+    "consensus_plots_params": {
+      "Borssele": {
+        "box_anchors": {
+          "evacuation": [
+            0.03,
+            0.35
+          ],
+          "sheltering": [
+            0.01,
+            0.95
+          ]
+        }
+      },
+      "Leibstadt": {
+        "box_anchors": {
+          "evacuation": [
+            0.77,
+            0.95
+          ],
+          "sheltering": [
+            0.76,
+            0.35
+          ]
+        }
+      },
+      "Cattenom": {
+        "box_anchors": {
+          "evacuation": [
+            0.05,
+            0.87
+          ],
+          "sheltering": [
+            0.03,
+            0.4
+          ]
+        }
+      }
+    },
+    "intersection_plots_params": {
+      "Borssele": {
+        "box_anchors": {
+          "evacuation": [
+            0.03,
+            0.35
+          ],
+          "sheltering": [
+            0.01,
+            0.95
+          ]
+        }
+      },
+      "Leibstadt": {
+        "box_anchors": {
+          "evacuation": [
+            0.05,
+            0.95
+          ],
+          "sheltering": [
+            0.76,
+            0.35
+          ]
+        }
+      },
+      "Cattenom": {
+        "box_anchors": {
+          "evacuation": [
+            0.05,
+            0.87
+          ],
+          "sheltering": [
+            0.03,
+            0.95
+          ]
+        }
+      }
+    },
+    "overlay_plots_params": {
+      "Borssele": {
+        "box_anchors": {
+          "evacuation": [
+            0.05,
+            0.23
+          ],
+          "sheltering": [
+            0.01,
+            0.99
+          ]
+        }
+      },
+      "Leibstadt": {
+        "box_anchors": {
+          "evacuation": [
+            0.03,
+            0.88
+          ],
+          "sheltering": [
+            0.01,
+            0.95
+          ]
+        }
+      },
+      "Cattenom": {
+        "box_anchors": {
+          "evacuation": [
+            0.01,
+            0.96
+          ],
+          "sheltering": [
+            0.78,
+            0.25
+          ]
+        }
+      }
+    }
+  }
+}
