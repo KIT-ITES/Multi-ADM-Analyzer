@@ -38,6 +38,7 @@ class Settings:
     year: str
     visual_parameters: dict[str, Any]
     with_local_basemap_overlay: bool
+    api_key: str | None
     plot_settings: dict[str, Any]
 
     n_cpus: int
@@ -68,6 +69,8 @@ class Settings:
 
         basemap_path = Path(raw["basemap_path"]) if raw.get("basemap_path") else None
 
+        api_key = cls._load_api_key(raw.get("api_key_file"))
+
         return cls(
             raw = raw,
             site_name = site_name,
@@ -89,6 +92,7 @@ class Settings:
             year = str(raw["year"]),
             visual_parameters = raw["visual_parameters"],
             with_local_basemap_overlay = bool(raw["with_local_basemap_overlay"]),
+            api_key = api_key,
             plot_settings = raw.get("plot_settings", {}),
             n_cpus = cpu_count(),
         )
@@ -151,3 +155,20 @@ class Settings:
                 "ADM3": self.adm3,
             },
         )
+
+    @staticmethod
+    def _load_api_key(path: str | Path | None) -> str | None:
+        if path is None:
+            return None
+
+        key_path = Path(path)
+
+        if not key_path.exists():
+            raise FileNotFoundError(f"API key file does not exist: {key_path}")
+
+        key = key_path.read_text(encoding = "utf-8").strip()
+
+        if not key:
+            raise ValueError(f"API key file is empty: {key_path}")
+
+        return key

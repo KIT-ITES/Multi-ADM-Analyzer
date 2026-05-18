@@ -19,18 +19,19 @@
   "threshold": 0,
   "basemap_path" : "basemaps/europe.shp",
   "with_local_basemap_overlay": true,
+  "api_key_file": "api.key",
 
   "plot_settings": {
-    "figure_size": [12, 10],
+    "figure_size": [10, 8],
     "dpi": 600,
 
-    "font_size_title": 16,
-    "font_size_axis_label": 13,
-    "font_size_tick_label": 12,
-    "font_size_ring_label": 11,
-    "font_size_bearing_label": 11,
-    "font_size_legend": 11,
-    "font_size_legend_title": 12,
+    "font_size_title": 12,
+    "font_size_axis_label": 10,
+    "font_size_tick_label": 10,
+    "font_size_ring_label": 10,
+    "font_size_bearing_label": 10,
+    "font_size_legend": 10,
+    "font_size_legend_title": 11,
 
     "show_legend": false,
     "export_legend": false,

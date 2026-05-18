@@ -10,6 +10,8 @@ class PlotContext:
     site_coord: tuple[float, float]
     epsg: int
 
+    api_key: str | None
+
     visual_parameters: dict[str, Any]
     with_local_basemap_overlay: bool
     basemap_path: Path | None
@@ -41,6 +43,7 @@ class PlotContext:
             site_coord = settings.site_coord,
 
             epsg = settings.epsg,
+            api_key = settings.api_key,
 
             visual_parameters = settings.visual_parameters,
             with_local_basemap_overlay = settings.with_local_basemap_overlay,

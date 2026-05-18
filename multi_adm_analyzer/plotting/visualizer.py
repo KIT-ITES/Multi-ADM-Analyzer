@@ -172,7 +172,7 @@ class Visualizer:
         self.ax.set_title(self.plot_title,
                           fontsize = self.context.font_size_title,
                           fontweight = "bold",
-                          pad = 15)
+                          pad = 10)
 
     def _release_site_projected(self) -> tuple[float, float]:
         point_gdf = gpd.GeoDataFrame(
@@ -418,7 +418,10 @@ class Visualizer:
         crs = self.grid_web_mercator.crs
 
         if provider == "terrain":
-            cx.add_basemap(self.ax, source = cx.providers.Esri.WorldShadedRelief, alpha = 0.55, crs = crs, reset_extent = False)
+            source = cx.providers.Stadia.StamenTerrainBackground(api_key = self.context.api_key)
+            source["url"] = source["url"] + f"?api_key={self.context.api_key}"
+            #cx.add_basemap(self.ax, source = cx.providers.Esri.WorldShadedRelief, alpha = 0.55, crs = crs, reset_extent = False)
+            cx.add_basemap(self.ax, crs = crs, source = source)
             return
 
         if provider == "positron":
