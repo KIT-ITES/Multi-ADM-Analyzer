@@ -6,6 +6,11 @@
 
 [![SWH](https://archive.softwareheritage.org/badge/swh:1:dir:110974fb0b92149c0b8ac7f2c802a1930752c836/)](https://archive.softwareheritage.org/swh:1:dir:110974fb0b92149c0b8ac7f2c802a1930752c836;origin=https://github.com/KIT-ITES/Multi-ADM-Analyzer;visit=swh:1:snp:40c3c865650f50da99de2b936a1a16a02e32fae3;anchor=swh:1:rev:b69b14d974ff66d2a517da82ae7803e60838893d)
 
+#### Paper Figures:
+
+Paper figures are located with high resolution in this branch: [ADM-Paper-Figures](https://github.com/KIT-ITES/Multi-ADM-Analyzer/tree/ADM-Paper-Figures)
+
+---
 
 # Multi-ADM-Analyzer
 
