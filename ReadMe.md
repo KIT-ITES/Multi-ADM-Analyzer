@@ -1,6 +1,15 @@
+# Associated Paper and Data
+
+[![Elsevier](https://a11ybadges.com/badge?logo=elsevier)](https://doi.org/10.1016/j.jenvrad.2026.108075) [![Mendeley](https://a11ybadges.com/badge?logo=mendeley)](https://doi.org/10.17632/kw76hfx5rd.3)
+
+#### Software Heritage Archive
+
+[![SWH](https://archive.softwareheritage.org/badge/swh:1:dir:110974fb0b92149c0b8ac7f2c802a1930752c836/)](https://archive.softwareheritage.org/swh:1:dir:110974fb0b92149c0b8ac7f2c802a1930752c836;origin=https://github.com/KIT-ITES/Multi-ADM-Analyzer;visit=swh:1:snp:40c3c865650f50da99de2b936a1a16a02e32fae3;anchor=swh:1:rev:b69b14d974ff66d2a517da82ae7803e60838893d)
+
+
 # Multi-ADM-Analyzer
 
-A modular Python framework for post-processing atmospheric dispersion model outputs, generating probabilistic exceedance maps, comparing ADMs, and producing publication-quality geospatial visualizations.
+A modular Python framework for post-processing [JRODOS](https://www.ites.kit.edu/english/294.php) atmospheric dispersion model outputs, generating probabilistic exceedance maps, comparing ADMs, and producing publication-quality geospatial visualizations.
 
 The project is designed for:
 
@@ -11,7 +20,7 @@ The project is designed for:
 - publication-quality map generation,
 - harmonized comparative map panels.
 
-The refactored architecture separates data loading, geospatial processing, statistical computation, plotting, and workflow orchestration.
+The architecture separates data loading, geospatial processing, statistical computation, plotting, and workflow orchestration.
 
 ---
 
